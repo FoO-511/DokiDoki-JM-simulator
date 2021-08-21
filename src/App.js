@@ -7,6 +7,7 @@ import Profile from "./components/Profile";
 import Talk from "./components/Talk";
 import Secret from "./components/Secret";
 import Links from "./components/Links";
+import Logs from "./components/Logs";
 
 import { Cookies } from "react-cookie";
 const cookies = new Cookies();
@@ -26,6 +27,7 @@ const App = () => {
           <Route path="/talk" exact component={Talk} />
           <Route path="/secret" exact component={Secret} />
           <Route path="/links" exact component={Links} />
+          <Route path="/logs" exact component={Logs} />
         </Container>
         <section></section>
       </Router>

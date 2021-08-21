@@ -44,16 +44,32 @@ const Secret = () => {
       info: "곧 개강이다. 학교 가기 싫다. 삼성전자가 내 등록금을 빼앗아 갔다.",
     },
   ];
+
+  const [cip, setCip] = useState("127.0.0.1");
+  useEffect(() => {
+    async function getIpClient() {
+      try {
+        const response = await axios.get("https://api.ipify.org?format=json");
+        setCip(response.data["ip"]);
+      } catch (error) {
+        console.error(error);
+      }
+    }
+    getIpClient();
+  }, []);
+
   const [isJm, setIsJm] = useState(false);
   useEffect(() => {
     async function checkCookie() {
-      const res = await axios.get(
-        `/api/checkCookie?cookie=${cookies.get("SESSIONID")}`
-      );
-      setIsJm(res.data);
+      if (cip !== "127.0.0.1") {
+        const res = await axios.get(
+          `/api/checkCookie?cookie=${cookies.get("SESSIONID")}&cip=${cip}`
+        );
+        setIsJm(res.data);
+      }
     }
     checkCookie();
-  }, []);
+  }, [cip]);
 
   if (isJm) {
     return (

@@ -22,7 +22,8 @@ const Profile = (props) => {
               <Card.Body>
                 <Card.Title>종민</Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">
-                  Bell mini <br /> height: 1cm <br /> weight: 1g
+                  Bell mini <br /> height: 1m <br /> weight: 1kg <br /> 캐스퍼
+                  대표 츤데레
                 </Card.Subtitle>
                 <Card.Text>
                   (구)준회원들과 즐거운 한 잔 뒤.. 돌연 BOB로 떠나버린 그.

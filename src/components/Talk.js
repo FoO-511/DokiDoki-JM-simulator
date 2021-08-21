@@ -53,8 +53,21 @@ const Minibell = ({
     });
   }, [sen, api]);
 
+  const [cip, setCip] = useState("127.0.0.1");
+  useEffect(() => {
+    async function getIpClient() {
+      try {
+        const response = await axios.get("https://api.ipify.org?format=json");
+        setCip(response.data["ip"]);
+      } catch (error) {
+        console.error(error);
+      }
+    }
+    getIpClient();
+  }, []);
+
   async function sendLink() {
-    await axios.get(`/api/write?test=${link}`);
+    await axios.get(`/api/write?test=${link}&cip=${cip}`);
   }
 
   const [ans, setAns] = useState();

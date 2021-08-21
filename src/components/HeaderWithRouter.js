@@ -9,11 +9,12 @@ const Header = (props) => {
         <Navbar.Brand href="/">JM Simulator</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto" activeKey={location.pathname}>
+          <Nav className="me-auto" activeKey={location.pathname} variant="dark">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/talk">Talk</Nav.Link>
             <NavDropdown title="🔔" id="basic-nav-dropdown">
               <NavDropdown.Item href="/links">제공받은 링크들</NavDropdown.Item>
+              <NavDropdown.Item href="/logs">로그</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="/secret">
                 종민의 비밀일기
