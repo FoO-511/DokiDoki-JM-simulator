@@ -1,32 +1,31 @@
+import React, { useEffect } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Container } from "react-bootstrap";
 
 import HeaderWithRouter from "./components/HeaderWithRouter";
 import Profile from "./components/Profile";
 import Talk from "./components/Talk";
+import Secret from "./components/Secret";
+import Links from "./components/Links";
 
-import axios from "axios";
-import React, { useEffect } from "react";
-
-const Two = () => <h1>Two</h1>;
+import { Cookies } from "react-cookie";
+const cookies = new Cookies();
 
 const App = () => {
   useEffect(() => {
-    async function test() {
-      const response = await axios.get("/test");
-      console.log(response.data);
+    if (!cookies.get("SESSIONID")) {
+      cookies.set("SESSIONID", "casper{you-are-guest}");
     }
-    test();
-  });
-
+  }, []);
   return (
     <div className="App">
       <Router>
         <HeaderWithRouter />
-        <Container>
+        <Container className="p-5">
           <Route path="/" exact component={Profile} />
           <Route path="/talk" exact component={Talk} />
-          <Route path="/two" exact component={Two} />
+          <Route path="/secret" exact component={Secret} />
+          <Route path="/links" exact component={Links} />
         </Container>
         <section></section>
       </Router>

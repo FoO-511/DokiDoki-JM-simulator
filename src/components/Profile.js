@@ -25,7 +25,7 @@ const Profile = (props) => {
                   Bell mini <br /> height: 1cm <br /> weight: 1g
                 </Card.Subtitle>
                 <Card.Text>
-                  준회원들과 즐거운 한 잔 뒤.. 돌연 BOB로 떠나버린 그.
+                  (구)준회원들과 즐거운 한 잔 뒤.. 돌연 BOB로 떠나버린 그.
                   <br />
                   최근 과제 폭탄으로 고민이 생겼다는데..?!
                 </Card.Text>

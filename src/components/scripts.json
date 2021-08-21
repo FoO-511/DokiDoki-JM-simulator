@@ -7,7 +7,7 @@
     "end": false
   },
   "2": {
-    "sen": "그동안 BOB를 하느라 조금 바쁘지 뭐야.. (훗..)",
+    "sen": "그동안 BoB(Best of Best)를 하느라 조금 바쁘지 뭐야.. (훗..)",
     "isSad": false,
     "isInput": false,
     "placeholder": "m",
@@ -105,6 +105,20 @@
     "end": false
   },
   "102": {
+    "sen": "마지막, 보여지지 않음.",
+    "isSad": true,
+    "isInput": false,
+    "placeholder": "m",
+    "end": true
+  },
+  "103": {
+    "sen": "링크 입력 후",
+    "isSad": true,
+    "isInput": false,
+    "placeholder": "m",
+    "end": false
+  },
+  "104": {
     "sen": "마지막, 보여지지 않음.",
     "isSad": true,
     "isInput": false,
