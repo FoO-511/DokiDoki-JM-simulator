@@ -1,0 +1,114 @@
+{
+  "1": {
+    "sen": "안녕.. 오랜만이야.",
+    "isSad": false,
+    "isInput": false,
+    "placeholder": "m",
+    "end": false
+  },
+  "2": {
+    "sen": "그동안 BOB를 하느라 조금 바쁘지 뭐야.. (훗..)",
+    "isSad": false,
+    "isInput": false,
+    "placeholder": "m",
+    "end": false
+  },
+  "3": {
+    "sen": "내가 좋아하는 포'레'식도 못하고.",
+    "isSad": true,
+    "isInput": false,
+    "placeholder": "m",
+    "end": false
+  },
+  "4": {
+    "sen": "너는 잘 지내고 있지?",
+    "isSad": false,
+    "isInput": false,
+    "placeholder": "m",
+    "end": false
+  },
+  "5": {
+    "sen": "너는 잘 지내고 있지?-답",
+    "isSad": false,
+    "isInput": true,
+    "placeholder": "(y/n)로 대답해주세요.. 나머지 처리 로직 없음..",
+    "end": false
+  },
+  "6": {
+    "sen": "못지낸다니.. 지금 그게 내 앞에서 할 말이야??",
+    "isSad": true,
+    "isInput": false,
+    "placeholder": "m",
+    "end": false
+  },
+  "7": {
+    "sen": "잘지낸다니 다행이네.. 난 못지내고 있는데..",
+    "isSad": true,
+    "isInput": false,
+    "placeholder": "m",
+    "end": false
+  },
+  "8": {
+    "sen": "과제하느라 토할 것 같아...",
+    "isSad": true,
+    "isInput": false,
+    "placeholder": "m",
+    "end": false
+  },
+  "9": {
+    "sen": "그래, 과제하니까 생각났는데..",
+    "isSad": true,
+    "isInput": false,
+    "placeholder": "m",
+    "end": false
+  },
+  "10": {
+    "sen": "혹시 보안 정보를 얻을 만한 사이트 알고 있어? ",
+    "isSad": false,
+    "isInput": false,
+    "placeholder": "m",
+    "end": false
+  },
+  "11": {
+    "sen": "(어차피 나보다는 모르겠지만..)",
+    "isSad": false,
+    "isInput": false,
+    "placeholder": "m",
+    "end": false
+  },
+  "12": {
+    "sen": "혹시 보안 정보를 얻을 만한 사이트 알고 있어? - 답",
+    "isSad": false,
+    "isInput": true,
+    "placeholder": "",
+    "end": false
+  },
+  "13": {
+    "sen": "고마워^^ ",
+    "isSad": false,
+    "isInput": false,
+    "placeholder": "m",
+    "end": false
+  },
+  "100": {
+    "sen": "진짜 실망이다... 우리 다신 보지 말자.",
+    "isSad": true,
+    "isInput": false,
+    "placeholder": "m",
+    "end": false
+  },
+  "101": {
+    "sen": "[ 종민쿤.. 요즘 힘든가봅니다. 다시 시도해 보세요!]",
+    "isSad": true,
+    "isInput": false,
+    "placeholder": "m",
+    "end": false
+  },
+  "102": {
+    "sen": "마지막, 보여지지 않음.",
+    "isSad": true,
+    "isInput": false,
+    "placeholder": "m",
+    "end": true
+  }
+}

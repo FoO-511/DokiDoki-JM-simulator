@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import { Container } from "react-bootstrap";
 
-function App() {
+import HeaderWithRouter from "./components/HeaderWithRouter";
+import Profile from "./components/Profile";
+import Talk from "./components/Talk";
+
+import axios from "axios";
+import React, { useEffect } from "react";
+
+const Two = () => <h1>Two</h1>;
+
+const App = () => {
+  useEffect(() => {
+    async function test() {
+      const response = await axios.get("/test");
+      console.log(response.data);
+    }
+    test();
+  });
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <HeaderWithRouter />
+        <Container>
+          <Route path="/" exact component={Profile} />
+          <Route path="/talk" exact component={Talk} />
+          <Route path="/two" exact component={Two} />
+        </Container>
+        <section></section>
+      </Router>
     </div>
   );
-}
+};
 
 export default App;
