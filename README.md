@@ -10,7 +10,7 @@
 * backend: express.js
 
 
-## WrihtUp
+## WriteUp
 
 https://5thofnovmbr.notion.site/writeup-53f09432f9404d3c8fb72dec0782f1d4
 
