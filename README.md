@@ -1,13 +1,16 @@
-# casper-ctf
+# DokiDoki-JM-simulator
 
-- apt install mysql-client-core-8.0
+창원대학교 정보보안 동아리 casper의 내부 CTF 문제입니다.
 
-- yarn eject 후 webpackDevServer....js에 이거 추가
+* 분야: 웹 - XSS
 
-```
-proxy: {
-      "/api": "http://localhost:4000",
-      changeOrigin: true,
-    },
+## Stack
 
-```
+* frontend: react.js, bootstrap
+* backend: express.js
+
+
+## WrihtUp
+
+https://5thofnovmbr.notion.site/writeup-53f09432f9404d3c8fb72dec0782f1d4
+
